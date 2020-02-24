@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Kalkulator Sederhana</title>
+<h2 align="left"> 
+    Kalkulator Praktikum 3
+</h2>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+    document.write("dimodifikasi terakhir pada" + document.lastModified);
+    function tambah()
+    {
+    var1=eval(form.var1.value)
+    var2=eval(form.var2.value)
+    jumlah=var1+var2
+    form.hasil.value =jumlah 
+    }
+   
+    function kurang()
+    {
+    var1=(form.var1.value)
+    var2=(form.var2.value)
+    jumlah=var1-var2
+    form.hasil.value=jumlah
+    }
+   
+    function kali()
+    {
+    var1=(form.var1.value)
+    var2=(form.var2.value)
+    jumlah=var1*var2
+    form.hasil.value=jumlah
+    }
+   
+    function bagi()
+    {
+    var1=(form.var1.value)
+    var2=(form.var2.value)
+    jumlah=var1/var2
+    form.hasil.value = jumlah
+    }
+
+
+</SCRIPT>
+</head>
+
+<body>
+
+<form name="form">
+	<table border="0" align="left">
+    <tr>
+        <td width="275" 
+        height="150" valign="top" bgcolor="pink">
+        <p>Bilangan 1
+            <input type="text" name="var1" >           
+          <br>
+          <br>
+        Bilangan 2
+        <input type="text" name="var2">   
+        <p align="center">
+        <input type="button" value="+" onClick="tambah()">
+        <input type="button" value="-" onClick="kurang()">
+        <input type="button" value="x" onClick="kali()">
+        <input type="button" value="/" onClick="bagi()">
+        <input name="Hapus" type="reset" id="Hapus" value="Hapus">
+        </p>
+        <ul>Hasil
+            <input type= "text" name="hasil">
+      </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
